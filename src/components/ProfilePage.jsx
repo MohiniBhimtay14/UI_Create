@@ -48,7 +48,10 @@ const ProfilePage = () => {
             <ArrowLeft className="w-5 h-5" />
           </button>
 
-          <div className="absolute top-5 right-5 text-gray-500 h-20 w-15">⏻</div>
+          <div className="absolute top-5 right-5 text-gray-500 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow">
+  ⏻
+</div>
+
 
           <div className="relative inline-block">
             <img

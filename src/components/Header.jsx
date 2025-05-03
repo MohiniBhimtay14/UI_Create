@@ -13,7 +13,7 @@ export default function UserCard({ onMenuClick }) {
         {/* Header Section */}
         <div className="flex items-center justify-between p-4">
         <img
-  src="/hamberger.png" // Replace with your actual file name
+  src="/hamberger.png" 
   alt="Menu"
   className="w-8 h-8 cursor-pointer"
   onClick={onMenuClick}
@@ -23,7 +23,7 @@ export default function UserCard({ onMenuClick }) {
             <img src="/logo.png" alt="logo" className="h-9 mx-auto" />
           </div>
           <img
-  src="/Frame.png" // Replace with your actual file name
+  src="/Frame.png" 
   alt="User Profile"
   className="w-8 h-8 rounded-full bg-white p-1 cursor-pointer"
   onClick={() => navigate("/profile")}
@@ -37,7 +37,7 @@ export default function UserCard({ onMenuClick }) {
             <img
               src="/image.png"
               alt="Profile"
-              className="w-5 h-5 rounded-full object-cover border"
+              className="w-10 h-10 rounded-full object-cover border"
             />
             <div className="ml-3">
               <h2 className="text-red-600 font-bold text-lg">विक्की जैन</h2>

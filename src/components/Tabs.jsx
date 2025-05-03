@@ -77,7 +77,7 @@ const TaskSection = () => {
 
         <Button variant="outline" className="text-red-600 border-red-400">View All</Button>
       </div>
-      <div className="space-y-2">
+      <div className="space-y-4">
   {tasks.map((task, index) => (
     <TaskCard key={index} {...task} />
   ))}
