@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Banner from "./components/UpdatesSection";
 import Events from "./components/Events";
 import UpdatesSection from "./components/UpdatesSection";
+import Birthday from "./components/Birthday";
 
 import './index.css';
 
@@ -20,6 +21,8 @@ export default function App() {
       {/* <Banner /> */}
       <Events />
       <UpdatesSection />
+      <Birthday />
+
 
       {/* Add other sections like <Updates />, <Birthdays />, <QuickLinks /> */}
     </div>
