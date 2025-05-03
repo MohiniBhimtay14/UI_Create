@@ -9,7 +9,7 @@ const cards = [
     image: card1,
     btnColor: "bg-red-500",
     textColor: "text-white",
-    hideText: true, // hide title/desc for card 1
+    hideText: true,
   },
   {
     title: "कार्यसमिति बैठक",
@@ -46,7 +46,6 @@ const UpdatesSection = () => {
             Updates
           </h2>
 
-          {/* Scrollable container showing 1.5 cards */}
           <div className="max-w-[375px] overflow-x-auto flex gap-4 flex-nowrap scrollbar-hide px-1">
             {cards.map((item, index) => (
               <div

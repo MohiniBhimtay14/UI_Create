@@ -25,7 +25,7 @@ const Sidebar = ({ onClose }) => {
       <div className="relative px-4 py-6 border-b">
         <button
           className="absolute top-4 right-4 text-gray-500 hover:text-black"
-          onClick={onClose}  // Close the sidebar when clicked
+          onClick={onClose}  
         >
           <X className="w-5 h-5" />
         </button>

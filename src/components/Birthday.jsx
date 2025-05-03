@@ -22,18 +22,16 @@ export default function Birthdays() {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col  bg-white p-4 rounded-xl shadow-md w-full max-w-[350px]">
-
-      <div className="text-left">
-  <h2 className="text-xl font-bold text-black-600 flex gap-2">
-    {/* Image as Icon */}
-    <img src="/lotus.png" alt="Icon" className="w-6 h-6" />
-    Birthdays
-  </h2>
-</div>
-
+        <div className="text-left">
+          <h2 className="text-xl font-bold text-black-600 flex gap-2">
+            {/* Image as Icon */}
+            <img src="/lotus.png" alt="Icon" className="w-6 h-6" />
+            Birthdays
+          </h2>
+        </div>
 
         <div className="flex gap-4 overflow-x-auto py-4 scrollbar-hide w-full">
-          <div className="flex w-[500px]"> {/* Container for cards with enough width to show 1.5 cards */}
+          <div className="flex w-[500px]">
             {birthdays.map((person, index) => (
               <Card
                 key={index}

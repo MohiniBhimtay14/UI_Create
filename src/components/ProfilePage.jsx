@@ -15,7 +15,7 @@ import {
   Phone,
   MessageSquare,
   LifeBuoy,
-  ArrowLeft
+  ArrowLeft,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -49,9 +49,8 @@ const ProfilePage = () => {
           </button>
 
           <div className="absolute top-5 right-5 text-gray-500 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow">
-  ⏻
-</div>
-
+            ⏻
+          </div>
 
           <div className="relative inline-block">
             <img
@@ -77,10 +76,8 @@ const ProfilePage = () => {
               className="flex items-center justify-between px-4 py-3 hover:bg-gray-100 "
             >
               <div className="flex items-center gap-3 text-gray-700 ">
-                {/* Icon Container with Red Background and Rectangular Shape */}
-                <div className="bg-red-50 p-2 rounded-md">
-                  {item.icon}
-                </div>
+              
+                <div className="bg-red-50 p-2 rounded-md">{item.icon}</div>
                 <div>
                   <p className="font-medium text-red-600">{item.label}</p>
                   <p className="text-xs text-gray-500">

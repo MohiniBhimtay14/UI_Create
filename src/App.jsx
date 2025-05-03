@@ -10,7 +10,7 @@ import QuickApp from "./components/QuickApp";
 import ProfilePage from "./components/ProfilePage";
 import Sidebar from "./components/Sidebar"; // ⬅️ your new sidebar component
 
-import './index.css';
+import "./index.css";
 
 export default function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);

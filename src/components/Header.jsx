@@ -5,30 +5,29 @@ import { MdOutlineCardGiftcard } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 export default function UserCard({ onMenuClick }) {
-  const navigate = useNavigate(); // For navigation to profile
+  const navigate = useNavigate();
 
   return (
     <div className="w-full bg-gray-100 flex items-start justify-center p-4">
       <div className="w-full max-w-md bg-[#fdf0dc] rounded-xl shadow-md relative overflow-hidden">
         {/* Header Section */}
         <div className="flex items-center justify-between p-4">
-        <img
-  src="/hamberger.png" 
-  alt="Menu"
-  className="w-8 h-8 cursor-pointer"
-  onClick={onMenuClick}
-/>
+          <img
+            src="/hamberger.png"
+            alt="Menu"
+            className="w-8 h-8 cursor-pointer"
+            onClick={onMenuClick}
+          />
 
           <div className="text-center">
             <img src="/logo.png" alt="logo" className="h-9 mx-auto" />
           </div>
           <img
-  src="/Frame.png" 
-  alt="User Profile"
-  className="w-8 h-8 rounded-full bg-white p-1 cursor-pointer"
-  onClick={() => navigate("/profile")}
-/>
-
+            src="/Frame.png"
+            alt="User Profile"
+            className="w-8 h-8 rounded-full bg-white p-1 cursor-pointer"
+            onClick={() => navigate("/profile")}
+          />
         </div>
 
         {/* Profile Card */}
