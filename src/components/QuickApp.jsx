@@ -12,7 +12,7 @@ export default function QuickLinks() {
   return (
     <div className="flex justify-center">
     <div className=" rounded-xl shadow-md p-4 w-full max-w-md mx-auto">
-    <h2 className="text-xl font-bold text-black-600 flex items-center gap-2">
+    <h2 className="text-xl font-bold text-black-600 flex items-center gap-2 mb-6">
   {/* Image as Icon */}
   <img src="/lotus.png" alt="Icon" className="w-6 h-6" />
 Quick Links</h2>
