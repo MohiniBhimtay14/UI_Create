@@ -12,17 +12,23 @@ export default function UserCard({ onMenuClick }) {
       <div className="w-full max-w-md bg-[#fdf0dc] rounded-xl shadow-md relative overflow-hidden">
         {/* Header Section */}
         <div className="flex items-center justify-between p-4">
-          <FiMenu
-            className="text-2xl cursor-pointer"
-            onClick={onMenuClick}  // Trigger sidebar open
-          />
+        <img
+  src="/hamberger.png" // Replace with your actual file name
+  alt="Menu"
+  className="w-8 h-8 cursor-pointer"
+  onClick={onMenuClick}
+/>
+
           <div className="text-center">
             <img src="/logo.png" alt="logo" className="h-8 mx-auto" />
           </div>
-          <FaUserCircle
-            className="text-2xl cursor-pointer"
-            onClick={() => navigate("/profile")}  // Navigate to profile page
-          />
+          <img
+  src="/Frame.png" // Replace with your actual file name
+  alt="User Profile"
+  className="w-8 h-8 rounded-full bg-white p-1 cursor-pointer"
+  onClick={() => navigate("/profile")}
+/>
+
         </div>
 
         {/* Profile Card */}
