@@ -48,7 +48,7 @@ const ProfilePage = () => {
             <ArrowLeft className="w-5 h-5" />
           </button>
 
-          {/* Power icon (you can replace ⏻ with an icon if needed) */}
+       
           <div className="absolute top-3 right-3 text-gray-500">⏻</div>
 
           <div className="relative inline-block">

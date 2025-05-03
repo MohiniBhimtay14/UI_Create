@@ -44,7 +44,7 @@ const Sidebar = () => {
         </button>
         <div className="flex items-center gap-4">
           <img
-            src="https://i.pravatar.cc/100"
+            src="/image.png"
             alt="Avatar"
             className="w-12 h-12 rounded-full"
           />

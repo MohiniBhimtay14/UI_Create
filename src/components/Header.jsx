@@ -4,12 +4,11 @@ import { FiMenu } from "react-icons/fi";
 import { MdOutlineCardGiftcard } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-
 export default function UserCard({ onMenuClick }) {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full bg-gray-100 flex items-start justify-center p-4">
+    <div className="w-full bg-gray-100 flex items-start justify-center p-4 ">
       <div className="w-full max-w-md bg-[#fdf0dc] rounded-xl shadow-md relative overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between p-4">
@@ -27,7 +26,7 @@ export default function UserCard({ onMenuClick }) {
         </div>
 
         {/* Profile Card */}
-        <div className="flex items-center justify-between bg-white rounded-xl shadow p-4 mx-4 -mt-6">
+        <div className="flex items-center justify-between bg-[#fdf0dc] rounded-xl  p-4 ">
           <div className="flex items-center">
             <img
               src="/image.png"
