@@ -1,34 +1,38 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Tabs from "./components/Tabs";
 import NavBar from "./components/NavBar";
-import Banner from "./components/UpdatesSection";
-import Events from "./components/Events";
 import UpdatesSection from "./components/UpdatesSection";
+import Events from "./components/Events";
 import Birthday from "./components/Birthday";
 import QuickApp from "./components/QuickApp";
+import ProfilePage from "./components/ProfilePage"; // ✅ import your profile page
 
 import './index.css';
 
-// import other components...
-
 export default function App() {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      {/* <h1 className="text-4xl font-bold text-red-500">Hello Tailwind</h1> */}
+    <Router>
+      <Routes>
+        {/* Main App Route */}
+        <Route
+          path="/"
+          element={
+            <div className="bg-gray-100 min-h-screen">
+              <Header />
+              <Tabs />
+              <NavBar />
+              <Events />
+              <UpdatesSection />
+              <Birthday />
+              <QuickApp />
+            </div>
+          }
+        />
 
-      <Header />
-      <Tabs />
-      <NavBar />
-      {/* <Banner /> */}
-      <Events />
-      <UpdatesSection />
-      <Birthday />
-      <QuickApp />
-
-
-
-
-      {/* Add other sections like <Updates />, <Birthdays />, <QuickLinks /> */}
-    </div>
+        {/* Profile Page Route */}
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
+    </Router>
   );
 }

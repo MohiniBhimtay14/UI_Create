@@ -2,11 +2,13 @@ import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineCardGiftcard } from "react-icons/md";
-
+import { useNavigate } from "react-router-dom"; // ✅ import navigate
 
 export default function UserCard() {
+  const navigate = useNavigate(); // ✅ hook
+
   return (
-    <div className="w-full  bg-gray-100 flex items-start justify-center p-4">
+    <div className="w-full bg-gray-100 flex items-start justify-center p-4">
       <div className="w-full max-w-md bg-[#fdf0dc] rounded-xl shadow-md relative overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between p-4">
@@ -18,14 +20,19 @@ export default function UserCard() {
               className="h-8 mx-auto"
             />
           </div>
-          <FaUserCircle className="text-2xl" />
+
+          {/* ✅ Add onClick to navigate */}
+          <FaUserCircle
+            className="text-2xl cursor-pointer"
+            onClick={() => navigate("/profile")}
+          />
         </div>
 
         {/* Profile Card */}
         <div className="flex items-center justify-between bg-white rounded-xl shadow p-4 mx-4 -mt-6">
-          <div className="flex items-center ">
+          <div className="flex items-center">
             <img
-              src="/Profile.jpg" 
+              src="/image.png"
               alt="Profile"
               className="w-5 h-5 rounded-full object-cover border"
             />
