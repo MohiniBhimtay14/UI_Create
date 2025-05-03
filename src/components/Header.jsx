@@ -2,26 +2,23 @@ import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineCardGiftcard } from "react-icons/md";
-import { useNavigate } from "react-router-dom"; // ✅ import navigate
+import { useNavigate } from "react-router-dom";
 
-export default function UserCard() {
-  const navigate = useNavigate(); // ✅ hook
+export default function UserCard({ onMenuClick }) {
+  const navigate = useNavigate();
 
   return (
     <div className="w-full bg-gray-100 flex items-start justify-center p-4">
       <div className="w-full max-w-md bg-[#fdf0dc] rounded-xl shadow-md relative overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between p-4">
-          <FiMenu className="text-2xl" />
+          <FiMenu
+            className="text-2xl cursor-pointer"
+            onClick={onMenuClick} // 🔗 this opens the sidebar
+          />
           <div className="text-center">
-            <img
-              src="/logo.png"
-              alt="logo"
-              className="h-8 mx-auto"
-            />
+            <img src="/logo.png" alt="logo" className="h-8 mx-auto" />
           </div>
-
-          {/* ✅ Add onClick to navigate */}
           <FaUserCircle
             className="text-2xl cursor-pointer"
             onClick={() => navigate("/profile")}
