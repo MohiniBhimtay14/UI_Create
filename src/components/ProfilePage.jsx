@@ -23,7 +23,7 @@ const ProfilePage = () => {
   const navigate = useNavigate();
 
   const menuItems = [
-    { icon: <User className="w-5 h-5" />, label: "Profile" },
+    { icon: <User className="w-5 h-5 " />, label: "Profile" },
     { icon: <MapPin className="w-5 h-5" />, label: "My Area" },
     { icon: <Bell className="w-5 h-5" />, label: "Notification" },
     { icon: <HeartHandshake className="w-5 h-5" />, label: "My Contribution" },
@@ -48,8 +48,7 @@ const ProfilePage = () => {
             <ArrowLeft className="w-5 h-5" />
           </button>
 
-       
-          <div className="absolute top-3 right-3 text-gray-500">⏻</div>
+          <div className="absolute top-5 right-5 text-gray-500 h-20 w-15">⏻</div>
 
           <div className="relative inline-block">
             <img
@@ -72,12 +71,15 @@ const ProfilePage = () => {
           {menuItems.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-between px-4 py-3 hover:bg-gray-100"
+              className="flex items-center justify-between px-4 py-3 hover:bg-gray-100 "
             >
-              <div className="flex items-center gap-3 text-gray-700">
-                {item.icon}
+              <div className="flex items-center gap-3 text-gray-700 ">
+                {/* Icon Container with Red Background and Rectangular Shape */}
+                <div className="bg-red-50 p-2 rounded-md">
+                  {item.icon}
+                </div>
                 <div>
-                  <p className="font-medium">{item.label}</p>
+                  <p className="font-medium text-red-600">{item.label}</p>
                   <p className="text-xs text-gray-500">
                     Update and modify your profile
                   </p>
