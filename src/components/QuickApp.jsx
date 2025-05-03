@@ -12,11 +12,10 @@ export default function QuickLinks() {
   return (
     <div className="flex justify-center">
     <div className=" rounded-xl shadow-md p-4 w-full max-w-md mx-auto">
-      <div className="flex items-center gap-2 mb-4">
-  
-        <span className="text-red-600 text-2xl">🌺</span>
-        <h2 className="text-lg font-bold text-gray-800">Quick Links</h2>
-      </div>
+    <h2 className="text-xl font-bold text-black-600 flex items-center gap-2">
+  {/* Image as Icon */}
+  <img src="/lotus.png" alt="Icon" className="w-6 h-6" />
+Quick Links</h2>
 
       <div className="bg-gray-50 rounded-xl p-4 flex justify-between">
         {quickLinks.map((link, index) => (

@@ -61,9 +61,12 @@ const TaskSection = () => {
   return (
     <div className="p-4 max-w-md mx-auto">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-red-600 flex items-center gap-2">
-          <span className="text-2xl">🪷</span> Tasks
-        </h2>
+      <h2 className="text-xl font-bold text-red-600 flex items-center gap-2">
+  {/* Image as Icon */}
+  <img src="/Mask group.png" alt="Icon" className="w-6 h-6" />
+  Tasks
+</h2>
+
         <Button variant="outline" className="text-red-600 border-red-400">View All</Button>
       </div>
       {tasks.map((task, index) => (

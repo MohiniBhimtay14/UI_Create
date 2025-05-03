@@ -38,11 +38,12 @@ const cards = [
 const UpdatesSection = () => {
   return (
     <div className="flex justify-center">
-      <div className="text-white py-8 px-4">
+      <div className=" py-8 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-semibold flex items-center gap-2 mb-6">
-            <span className="text-black-500 text-3xl">🌸</span>
-            <span className="text-black">Updates</span>
+          <h2 className="text-xl font-bold text-black-600 flex items-center gap-2">
+            {/* Image as Icon */}
+            <img src="/lotus.png" alt="Icon" className="w-6 h-6 " />
+            Updates
           </h2>
 
           {/* Scrollable container showing 1.5 cards */}
