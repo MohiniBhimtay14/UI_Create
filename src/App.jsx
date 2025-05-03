@@ -1,8 +1,10 @@
 import Header from "./components/Header";
 import Tabs from "./components/Tabs";
 import NavBar from "./components/NavBar";
-import Banner from "./components/Banner";
+import Banner from "./components/UpdatesSection";
 import Events from "./components/Events";
+import UpdatesSection from "./components/UpdatesSection";
+
 import './index.css';
 
 // import other components...
@@ -17,6 +19,8 @@ export default function App() {
       <NavBar />
       {/* <Banner /> */}
       <Events />
+      <UpdatesSection />
+
       {/* Add other sections like <Updates />, <Birthdays />, <QuickLinks /> */}
     </div>
   );
