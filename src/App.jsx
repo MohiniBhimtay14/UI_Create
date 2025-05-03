@@ -15,7 +15,7 @@ export default function App() {
       <Header />
       <Tabs />
       <NavBar />
-      <Banner />
+      {/* <Banner /> */}
       <Events />
       {/* Add other sections like <Updates />, <Birthdays />, <QuickLinks /> */}
     </div>

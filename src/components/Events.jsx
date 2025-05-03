@@ -1,25 +1,20 @@
-import React from 'react'
+import React from "react";
+import { MapPin } from "lucide-react";
 
-const Events = () => {
-    const eventList = [
-      { title: "Shaan-e-Diksha", date: "19 Jan" },
-      { title: "Shaan-e-Seva", date: "21 Jan" },
-    ];
-    return (
-      <div className="p-4">
-        <h3 className="font-semibold mb-2">Events</h3>
-        <div className="flex gap-2 overflow-x-scroll">
-          {eventList.map((e, i) => (
-            <div key={i} className="min-w-[150px] bg-white rounded-lg shadow p-2">
-              <img src="/event.jpg" alt="Event" className="rounded" />
-              <p className="text-sm font-medium mt-2">{e.title}</p>
-              <p className="text-xs text-gray-500">{e.date}</p>
-            </div>
-          ))}
+const EventCard = () => {
+  return (
+    <div className="flex justify-center">
+      <div className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-white">
+        <div className="relative">
+          <img
+            src="./Event.png"
+            alt="Event"
+            className="w-full h-70 object-cover rounded-t-xl"
+          />
         </div>
       </div>
-    );
-  };
-  
+    </div>
+  );
+};
 
-export default Events
+export default EventCard;

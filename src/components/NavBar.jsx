@@ -1,7 +1,7 @@
 export default function App() {
   return (
     <div className="flex justify-center">
-      <div className=" min-h-screen p-6 space-y-6 w-full max-w-sm">
+      <div className="  p-6 space-y-6 w-full max-w-sm ">
         {/* News Heading */}
         <h2 className="text-2xl font-semibold text-black text-center">News</h2>
 
