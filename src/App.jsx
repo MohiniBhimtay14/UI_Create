@@ -5,6 +5,7 @@ import Banner from "./components/UpdatesSection";
 import Events from "./components/Events";
 import UpdatesSection from "./components/UpdatesSection";
 import Birthday from "./components/Birthday";
+import QuickApp from "./components/QuickApp";
 
 import './index.css';
 
@@ -22,6 +23,9 @@ export default function App() {
       <Events />
       <UpdatesSection />
       <Birthday />
+      <QuickApp />
+
+
 
 
       {/* Add other sections like <Updates />, <Birthdays />, <QuickLinks /> */}
