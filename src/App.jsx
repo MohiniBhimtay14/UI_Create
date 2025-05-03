@@ -8,6 +8,8 @@ import Events from "./components/Events";
 export default function App() {
   return (
     <div className="bg-gray-100 min-h-screen">
+      <h1 className="text-4xl font-bold text-red-500">Hello Tailwind</h1>
+
       <Header />
       <Tabs />
       <NavBar />
