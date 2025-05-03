@@ -20,7 +20,7 @@ export default function UserCard({ onMenuClick }) {
 />
 
           <div className="text-center">
-            <img src="/logo.png" alt="logo" className="h-8 mx-auto" />
+            <img src="/logo.png" alt="logo" className="h-9 mx-auto" />
           </div>
           <img
   src="/Frame.png" // Replace with your actual file name

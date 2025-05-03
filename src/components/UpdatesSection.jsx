@@ -38,7 +38,7 @@ const cards = [
 const UpdatesSection = () => {
   return (
     <div className="flex justify-center">
-      <div className=" py-8 px-4">
+      <div className=" py-8 px-4 ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-xl font-bold text-black-600 flex items-center gap-2 mb-6">
             {/* Image as Icon */}
