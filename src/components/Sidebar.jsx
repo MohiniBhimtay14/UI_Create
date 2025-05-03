@@ -1,23 +1,7 @@
 import React from "react";
-import {
-  X,
-  Users,
-  ListChecks,
-  MessageCircle,
-  Book,
-  GraduationCap,
-  BarChart,
-  MapPin,
-  FileText,
-  RefreshCw,
-  Download,
-  Newspaper,
-  HelpCircle,
-  Settings,
-  Target,
-} from "lucide-react";
+import { X, Users, ListChecks, MessageCircle, Book, GraduationCap, BarChart, MapPin, FileText, RefreshCw, Download, Newspaper, HelpCircle, Settings, Target } from "lucide-react";
 
-const Sidebar = () => {
+const Sidebar = ({ onClose }) => {
   const menuItems = [
     { icon: <Target className="w-5 h-5" />, label: "My Task" },
     { icon: <Users className="w-5 h-5" />, label: "My Community" },
@@ -36,18 +20,17 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="min-h-screen w-72 bg-white shadow-xl flex flex-col">
+    <div className="min-h-screen w-72 bg-white shadow-xl flex flex-col fixed inset-0 z-50">
       {/* Profile Header */}
       <div className="relative px-4 py-6 border-b">
-        <button className="absolute top-4 right-4 text-gray-500 hover:text-black">
+        <button
+          className="absolute top-4 right-4 text-gray-500 hover:text-black"
+          onClick={onClose}  // Close the sidebar when clicked
+        >
           <X className="w-5 h-5" />
         </button>
         <div className="flex items-center gap-4">
-          <img
-            src="/image.png"
-            alt="Avatar"
-            className="w-12 h-12 rounded-full"
-          />
+          <img src="/image.png" alt="Avatar" className="w-12 h-12 rounded-full" />
           <div>
             <h3 className="text-sm font-semibold">Vikki Jain</h3>
             <p className="text-xs text-gray-500">Karyasamiti Sadasya</p>

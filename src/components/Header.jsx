@@ -5,28 +5,28 @@ import { MdOutlineCardGiftcard } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 export default function UserCard({ onMenuClick }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // For navigation to profile
 
   return (
-    <div className="w-full bg-gray-100 flex items-start justify-center p-4 ">
+    <div className="w-full bg-gray-100 flex items-start justify-center p-4">
       <div className="w-full max-w-md bg-[#fdf0dc] rounded-xl shadow-md relative overflow-hidden">
-        {/* Header */}
+        {/* Header Section */}
         <div className="flex items-center justify-between p-4">
           <FiMenu
             className="text-2xl cursor-pointer"
-            onClick={onMenuClick} // 🔗 this opens the sidebar
+            onClick={onMenuClick}  // Trigger sidebar open
           />
           <div className="text-center">
             <img src="/logo.png" alt="logo" className="h-8 mx-auto" />
           </div>
           <FaUserCircle
             className="text-2xl cursor-pointer"
-            onClick={() => navigate("/profile")}
+            onClick={() => navigate("/profile")}  // Navigate to profile page
           />
         </div>
 
         {/* Profile Card */}
-        <div className="flex items-center justify-between bg-[#fdf0dc] rounded-xl  p-4 ">
+        <div className="flex items-center justify-between bg-[#fdf0dc] rounded-xl p-4">
           <div className="flex items-center">
             <img
               src="/image.png"
