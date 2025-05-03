@@ -3,6 +3,8 @@ import Tabs from "./components/Tabs";
 import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
 import Events from "./components/Events";
+import './index.css';
+
 // import other components...
 
 export default function App() {

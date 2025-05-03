@@ -13,7 +13,7 @@ export default function UserCard() {
           <FiMenu className="text-2xl" />
           <div className="text-center">
             <img
-              src="/logo.png" // Replace with actual logo path
+              src="/logo.png"
               alt="logo"
               className="h-8 mx-auto"
             />
@@ -23,11 +23,11 @@ export default function UserCard() {
 
         {/* Profile Card */}
         <div className="flex items-center justify-between bg-white rounded-xl shadow p-4 mx-4 -mt-6">
-          <div className="flex items-center">
+          <div className="flex items-center ">
             <img
-              src="/profile.jpg" // Replace with actual image path
+              src="/Profile.jpg" 
               alt="Profile"
-              className="w-14 h-14 rounded-full object-cover border"
+              className="w-5 h-5 rounded-full object-cover border"
             />
             <div className="ml-3">
               <h2 className="text-red-600 font-bold text-lg">विक्की जैन</h2>
